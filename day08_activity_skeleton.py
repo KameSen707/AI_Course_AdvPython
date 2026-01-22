@@ -20,7 +20,11 @@ df = pd.DataFrame(rows)
 
 df.drop_duplicates()
 
-print(df)
+df.drop_duplicates(subset=["user","day","product"],inplace=True)
+
+aggregated_df = df.groupby('product')['clicked'].sum().reset_index()
+
+print(aggregated_df)
 
 # TODO: Remove exact duplicates
 # TODO: Define uniqueness rule and deduplicate by subset
