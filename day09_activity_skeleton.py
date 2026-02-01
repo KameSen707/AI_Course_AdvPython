@@ -22,3 +22,5 @@ df['age'] = pd.to_numeric(df['age'],errors='coerce')
 print(df)
 
 # TODO: Implement normalize_schema(df) to convert types safely
+
+#Bruh
