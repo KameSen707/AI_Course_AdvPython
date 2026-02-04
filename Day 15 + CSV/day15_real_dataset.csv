@@ -1,0 +1,5 @@
+age,income,city,signup_time
+30,55000,NY,2024-01-01
+,70000,SF,2024-01-05
+45,,LA,not a date
+unknown,120000,NY,2024/02/01
