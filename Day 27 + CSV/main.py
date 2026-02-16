@@ -30,14 +30,15 @@ df = pd.read_csv('Day 27 + CSV/day27_boxplots.csv')
 
 # TODO: Histogram for score
 
+df["score"].hist(label = 'Histogram')
+
+plt.show()
+
 # TODO: Boxplot for score by group
 
-plt.figure(figsize=(6, 4))
 plt.boxplot(df["score"], vert=True, showfliers=True)
+df.boxplot(column="score"); plt.title("pandas boxplot")
 plt.title("Score — Boxplot"); plt.ylabel("Score")
 
 plt.show()
 
-df.boxplot(column="score"); plt.title("pandas boxplot")
-plt.show()
-sns.boxplot(x="group", y="score", data=df); plt.title("seaborn grouped")
