@@ -8,7 +8,7 @@ from sklearn.compose import ColumnTransformer
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.metrics import r2_score
 
-df = pd.read_csv('Mini Project 3/day35_project.csv')
+df = pd.read_csv('Mini Project 3/day25_project.csv')
 
 df_features = df.copy()
 df_features["price_per_sqft"] = df["price"] / df["sqft"].replace({0: np.nan})
