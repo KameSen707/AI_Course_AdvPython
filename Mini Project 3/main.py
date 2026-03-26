@@ -18,7 +18,7 @@ plt.show()
 
 # Relationship EDA
 
-# Scatter plot showing income vs spend
+# Scatter plot showing income vs spend                                              
 sns.scatterplot(data=df, x="income", y="spend")
 plt.title('Income vs Spend')
 plt.show()
